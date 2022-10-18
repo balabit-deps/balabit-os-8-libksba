@@ -1,3 +1,12 @@
+libksba (1.3.5-2ubuntu0.20.04.1) focal-security; urgency=medium
+
+  * SECURITY UPDATE: integer overflow when reading tag-length objects
+    - debian/patches/CVE-2022-3515.patch: check for integer overflow
+      directly in the TLV parser
+    - CVE-2022-3515
+
+ -- Steve Beattie <steve.beattie@canonical.com>  Mon, 17 Oct 2022 17:09:42 -0700
+
 libksba (1.3.5-2) unstable; urgency=medium
 
   * Upload to unstable.
